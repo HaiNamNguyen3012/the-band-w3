@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 /* 
@@ -62,6 +63,10 @@ html {
   margin-top: 16px !important;
 }
 
+.mt-32{
+  margin-top: 32px !important;
+}
+
 .text-white{
   color: #fff !important;
 }
@@ -76,6 +81,8 @@ html {
   padding: 11px 16px;
   display: inline-block;
   margin-top: 18px;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .pull-right{
@@ -165,6 +172,14 @@ html {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
@@ -175,6 +190,15 @@ html {
     cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover{
+  background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .bars-icon{
+  color: #000;
+}
+
+#header .bars-icon,
 #header .search-icon{
     color: #fff;
     font-size: 20px;
@@ -185,7 +209,7 @@ html {
   position: relative;
   margin-top: 46px;
   padding-top: 50%;
-  background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+  background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
  }
 #slider .text-content {
   position: absolute;
@@ -201,7 +225,8 @@ html {
 }
 #slider .text-description {
   font-size: 15px;
-  margin-top: 25px
+  margin-top: 25px;
+  text-shadow: 0 0 2px #000;
 }
 #content {
     
@@ -213,8 +238,8 @@ html {
   padding: 64px 0 112px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 16px;
-  padding-right: 16px; */
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 #content .section-heading{
@@ -240,7 +265,7 @@ html {
 }
 
 #content .member-list{
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 #content .member-name{
@@ -292,7 +317,7 @@ html {
 /* places */
 
 .places-list{
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .place-img{
@@ -309,6 +334,7 @@ html {
   background-color: #fff;
   font-size: 15px;
 }
+
 .place-heading{
   font-size: 15px;
 }
@@ -336,6 +362,15 @@ html {
   display: inline-block;
 }
 
+.contact-info a{
+  color: #101aef;
+  opacity: 0.8;
+}
+
+.contact-info a:hover{
+  opacity: 1;
+}
+
 .contact-form{
   font-size: 15px;
 }
@@ -358,17 +393,17 @@ html {
   text-align: center;
 }
 
-#footer .social-list{
+#footer .socials-list{
   font-size: 24px;
 }
 
-#footer .social-list a{
+#footer .socials-list a{
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
 }
 
 #footer .copyright a:hover,
-#footer .social-list a:hover{
+#footer .socials-list a:hover{
   color: rgba(0, 0, 0, 0.4);
 }
 
